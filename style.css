@@ -138,7 +138,7 @@ a:active {
 #left-header {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: center;
   width: 30%;
   padding-right: 50px;
 
@@ -149,6 +149,8 @@ a:active {
   justify-content: center;
   font-family: sans-serif;
   font-weight: 40px;
+  height: 250px;
+  padding-bottom: 150px;
 }
 
 .format {
@@ -161,8 +163,8 @@ a:active {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  margin: 20px;
-  width: 20%;
+  margin: 30px;
+  width: 15%;
   height: 100%;
   background-color: white;
   border-radius: 5%;
@@ -201,7 +203,7 @@ a:active {
 }
 
 .line {
-  width: 100px;
+  width: 150px;
   height: 5px;
   background-color: #23a6f0;
   margin: 15px 0px;
@@ -231,11 +233,14 @@ a:active {
   right: 0;
 }
 
+#competitions{
+  padding-top: 100px;
+  padding-bottom: 250px;
+}
 #comp {
   display: flex;
   flex-direction: column;
-  padding: 30px 100px;
-  padding-top: 150px;
+  padding: 50px 100px;
 }
 
 #comp-style {
@@ -283,8 +288,8 @@ a:active {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 20px;
-  padding-bottom: 100px;
+  padding-top: 100px;
+  padding-bottom: 300px;
 }
 
 #calc-title {
@@ -339,6 +344,10 @@ a:active {
   height: 40px;
 }
 
+#switch-points, #goal-points, #pass-points {
+  padding: 10px;
+  font-size: 30px;
+}
 #score-var {
   margin: 25px;
   font-size: 300px;
@@ -357,10 +366,10 @@ input::-webkit-inner-spin-button {
   margin: 0;
 }
 
-#aboutSec{
+#aboutSec {
   display: flex;
   align-items: left;
-  padding-bottom: 120px;
+  padding: 200px;
 }
 
 #about-style {
@@ -376,13 +385,14 @@ input::-webkit-inner-spin-button {
   align-items: left;
 }
 
-#about-left{
+#about-left {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 75%;
+  width: 70%;
   padding-right: 30px;
 }
+
 #aboutBar {
   display: flex;
   flex-direction: row;
@@ -391,7 +401,7 @@ input::-webkit-inner-spin-button {
   width: 80%;
 }
 
-.about-img{
+.about-img {
   width: 200px;
   height: 150px;
   border: 2px solid #23a6f0;
@@ -404,7 +414,7 @@ input::-webkit-inner-spin-button {
   padding: 30px;
   margin: 30px 0px;
   line-height: 1.5;
-  width: 80%;
+  width: 50%;
   border: 2px solid #23a6f0;
   font-family: 'Verdana', serif;
 }
@@ -412,6 +422,7 @@ input::-webkit-inner-spin-button {
 #contact {
   display: flex;
   justify-content: center;
+  padding: 200px 100px;
 }
 
 #contact-style {
