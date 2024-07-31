@@ -413,11 +413,7 @@ input::-webkit-inner-spin-button {
   border-radius: 8px; /* Rounded corners */
   box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Soft shadow */
 }
-#about-style {
-  display: column;
-  justify-content: flex-start;
-  align-items: center;
-}
+
 
 #About {
   display: flex;
