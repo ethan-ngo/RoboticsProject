@@ -10,6 +10,7 @@
   <link href="reset.css" rel="stylesheet" type="text/css" />
   <link href="style.css" rel="stylesheet" type="text/css" />
   <link href="reset-webview.css" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -27,7 +28,7 @@
       <a class="nav-items" href="#calc">Calculator</a>
     </li>
     <li>
-      <a class="nav-items" href="#aboutSec">About</a>
+      <a class="nav-items" href="#About">About</a>
     </li>
     <li>
       <a class="nav-items" href="#contact">Contact</a>
@@ -70,10 +71,18 @@
 
     <div class="card" style="background-color: #23a6f0;">
       <img class="icon1" style="background-color: white;" src="img/picture.png">
-      <a class="card-format" style="color:white"
+      <a class="card-format" style="color:white; text-decoration-color: white;"
         href="https://viqrc-kb.recf.org/hc/en-us/categories/23291491021463-2024-2025-Rapid-Relay-Game-Manual">Game
         Manual</a>
-      <p class="card-format" style="color:white">Rules for the VEX IQ robotics compeititon 2024-2025 game, Rapid Relay!
+      <p class="card-format" style="color:white">Rules for VEX IQ robotics competition game, Rapid Relay!
+      </p>
+    </div>
+
+    <div class="card" style="background-color: #23a6f0;">
+      <img class="icon1" style="background-color: white;" src="img/user-profile-01.png">
+      <a class="card-format" style="color:white; text-decoration-color: white;"
+        href="https://recf.org/volunteers/">Volunteer</a>
+      <p class="card-format" style="color:white"> Sign up to help run a competition through the REC Foundation.
       </p>
     </div>
 
@@ -88,8 +97,8 @@
     </div>
 
     <div id="comp-style">
-      <button class="pre-btn"><img src="img/arrow.png"></button>
-      <buton class="nxt-btn"><img src="img/arrow.png"></buton>
+      <button class="pre-btn"><img class="slider-img" src="img/arrow.png"></button>
+      <buton class="nxt-btn"><img class="slider-img" src="img/arrow.png"></buton>
       <div class=video-container>
         <div class="comp-videos">
           <iframe class="video" src="https://www.youtube.com/embed/aa0B7kNHpg8?si=DrsGst2weswLCbYr"
@@ -201,37 +210,56 @@
   </div>
 
 
-  <div class="revealable" id="aboutSec">
-    <div id="about-left">
-      <div id="aboutBar">
-        <img class="about-img" src="img/mouth.gif">
-        <img class="about-img" src="img/group2.jpg">
-        <img class="about-img" src="img/base.gif">
-        <img class="about-img" src="img/group1.png">
-        <img class="about-img" src="img/motors.gif">
-      </div>
-      <div id="aboutBio">
-        Teaching in the robotics space involves guiding learners through the exciting process of designing, building,
-        and programming robots. It's a field that combines creativity, problem-solving, and hands-on skills, making it
-        accessible and engaging for
-        people of all backgrounds. By joining the robotics community, you'll not only help shape the future of
-        technology but also inspire others to discover their potential in STEM.
-        Whether you're a seasoned engineer or someone new to the field, your unique perspective can make a significant
-        impact!
-      </div>
-      <div id="aboutBar">
-        <img class="about-img" src="img/robot1.png">
-        <img class="about-img" src="img/robot2.png">
-        <img class="about-img" src="img/robot3.png">
-        <img class="about-img" src="img/robot4.jpg">
-        <img class="about-img" src="img/IMG_3972.jpg">
-      </div>
-    </div>
-    <div id="About">
+  <div id="aboutSec">
+    <div class="revealable" id="About">
       <div class="line"></div>
-      <h2 style="width: 300px">The Teaching Experience</h2>
-      <p id="subTitle">Anyone can learn !</p>
+      <h2>What is Vex Robotics?</h2>
+      <p id="subTitle">All about the engineering design process...</p>
     </div>
+
+    <div class="revealable about-container" style="padding-top:100px">
+      <div class="about-desc">
+        <h2>1. Design</h2>
+        <div class="container">
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;The first step in any game is to understand the game and identify the problem that must be solved. This problem can be broken down into smaller, more approachable problems. For example, a team might start with understanding the scoring and game rules first, then move on to figuring out a game strategy. One of the best ways to identify the problem is to have students think about questions to answer about strategy. What are the ways to score points? Does the robot need to move fast to score points? What are some ways the robot can pick up the scoring objects?</p>
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;In later iterations of the design process, this step might mean to identify something on the robot that can be improved. Whether that be a faulty drivetrain mechanism or an inefficiency in the programming strategy, students are honing down on more specific parts of the game. After identifying the problem, they can define constraints and requirements for an optimized solution. It is important to note that this step is crucial to the entire Engineering Design Process, because without a solid understanding of the basic problem, time may be wasted working on irrelevant ideas.</p>
+        </div>
+      </div>
+      <img class="about-img" src="img/mouth.gif">
+    </div>
+    
+    <div class="revealable about-container">
+      <div class="about-desc">
+        <h2>2. Brainstorm & Evaluate</h2>
+        <div class="container">
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;In this step, students will research and think about possible solutions to the problem. A great method of research can be looking through past competitions to see how other teams built their robot to solve a specific task. You might notice some aspects of a previous competition are the same as some aspects of the current competition, therefore, you can take inspiration from how the teams solved those problems. Another way is to look towards real-world examples similar to that of the game. An example I used in my teachings was prompting students to think about how people are transported vertically. From that many of them came up with great ideas like elevators, scissor lifts that construction workers use, and rock climbing pulleys.
+          </p>
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;Once several ideas have been brainstormed, teams should objectively evaluate the pros and cons of each idea. The end goal is to find the best solution that fits the problem. A decision table covering the strengths of each design regarding specific criteria can help pick a solution. Another way is to test out the strengths and weaknesses of each idea and then decide from there.</p>
+        </div>
+      </div>
+      <img class="about-img" src="img/robot1.png">
+    </div>
+    
+    <div class="revealable about-container">
+      <div class="about-desc">
+        <h2>3. Build & Program</h2>
+        <div class="container">
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;Time to build and program the ideas that the team came up with! Generally builds for both code and robots start basic and evolve into more optimized designs as students follow through multiple prototypes of the engineering design process</p>
+        </div>
+      </div>
+      <img class="about-img" src="img/IMG_3972.jpg">
+    </div>
+
+    <div class="revealable about-container">
+      <div class="about-desc">
+        <h2>4. Test & Observe</h2>
+        <div class="container">
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;Test out the solution to see if it solves the problem highlighted in the first step. Testing procedures should be well documented to include quantitative measures of what doesn’t work, ideas on why it might not work, and what works. Additionally, multiple rounds of testing are crucial to achieve accurate results. This could mean multiple runs of a specific strategy or multiple tests of a mechanism in different scenarios. After this stage, the design process cycle can be repeated on whatever needs to be improved.</p>
+        </div>
+      </div>
+      <img class="about-img" src="img/motors.gif">
+    </div>
+    
   </div>
 
   <div class="revealable" id="contact">

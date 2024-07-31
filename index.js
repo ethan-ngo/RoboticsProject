@@ -8,7 +8,7 @@ themeButton.addEventListener("click", toggleDarkMode)
 
 let aboutButton = document.getElementById("header-button")
 const moveToAbout = () => {
-  window.location.href = "#aboutSec"
+  window.location.href = "#About"
 }
 aboutButton.addEventListener("click", moveToAbout)
 

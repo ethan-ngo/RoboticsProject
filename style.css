@@ -2,13 +2,17 @@ html {
   height: 100%;
   width: 100%;
   background-color: #E8F1FF;
+  font-family: 'Work Sans', sans-serif;
+}
+
+body{
+  font-family: 'Work Sans', sans-serif;
 }
 
 h2 {
   display: inline-block;
   margin: 0px;
   font-size: 40px;
-  font-family: 'Verdana', serif;
 }
 
 #navbar {
@@ -98,6 +102,10 @@ h2 {
   border-color: #23a6f0;
 }
 
+a {
+  text-decoration-color: #23a6f0;
+}
+
 a:link {
   color: black;
 }
@@ -109,10 +117,11 @@ a:visited {
 
 a:hover {
   cursor: pointer;
+  background-color: #E8F1FF;
 }
 
 a:active {
-  color: red;
+  cursor: pointer;
 }
 
 #header {
@@ -120,7 +129,6 @@ a:active {
   justify-content: center;
   padding-top: 100px;
   padding-bottom: 50px;
-  font-family: sans-serif;
 }
 
 #title {
@@ -132,7 +140,6 @@ a:active {
   font-size: 20px;
   color: gray;
   font-style: italic;
-  font-family: 'Verdana', serif;
 }
 
 #left-header {
@@ -147,14 +154,12 @@ a:active {
 #resources {
   display: flex;
   justify-content: center;
-  font-family: sans-serif;
   font-weight: 40px;
   height: 250px;
   padding-bottom: 150px;
 }
 
 .format {
-  font-family: sans-serif;
   font-size: 30px;
   padding-left: 200px;
 }
@@ -176,7 +181,7 @@ a:active {
   margin: 20px;
   margin-left: 25px;
   width: 10%;
-  height: 20%;
+  height: 10%;
   border-radius: 10%;
 }
 
@@ -187,7 +192,6 @@ a:active {
 .card-format {
   margin: 25px;
   margin-top: 0px;
-  font-family: 'Verdana', serif;
 }
 
 .picture {
@@ -222,6 +226,11 @@ a:active {
   background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #E8F1FF 100%);
   cursor: pointer;
   z-index: 8;
+}
+
+.slider-img {
+  width: 1rem;
+  height: 3rem;
 }
 
 .pre-btn {
@@ -281,7 +290,6 @@ a:active {
   padding: 10px;
   font-weight: bolder;
   font-size: 20px;
-  font-family: 'Verdana', serif;
 }
 
 #calc {
@@ -289,7 +297,7 @@ a:active {
   justify-content: center;
   align-items: center;
   padding-top: 100px;
-  padding-bottom: 300px;
+  padding-bottom: 200px;
 }
 
 #calc-title {
@@ -368,10 +376,43 @@ input::-webkit-inner-spin-button {
 
 #aboutSec {
   display: flex;
+  flex-direction: column;
   align-items: left;
-  padding: 200px;
+  padding: 200px 100px;
 }
 
+.about-container{
+  display: flex;
+  justify-content: center;
+  padding: 100px 0px;
+  width: 100%;
+}
+
+.about-desc{
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  height: auto;
+  padding-right: 100px;
+}
+.container {
+  max-width: 500px;
+  background: #fff;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  line-height: 1.5;
+  margin-top: 50px;
+}
+
+.about-img{
+  width: 500px;
+  height: auto;
+  border: 1px solid #ddd; /* Light border for definition */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Soft shadow */
+}
 #about-style {
   display: column;
   justify-content: flex-start;
@@ -381,42 +422,9 @@ input::-webkit-inner-spin-button {
 #About {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: left;
-}
-
-#about-left {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 70%;
-  padding-right: 30px;
-}
-
-#aboutBar {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: left;
-  width: 80%;
-}
-
-.about-img {
-  width: 200px;
-  height: 150px;
-  border: 2px solid #23a6f0;
-}
-
-#aboutBio {
-  background-color: white;
-  color: black;
-  font-size: 20px;
-  padding: 30px;
-  margin: 30px 0px;
-  line-height: 1.5;
-  width: 50%;
-  border: 2px solid #23a6f0;
-  font-family: 'Verdana', serif;
+  justify-content: left;
+  align-items: flex-start;
+  padding-top: 200px;
 }
 
 #contact {
@@ -444,7 +452,6 @@ input::-webkit-inner-spin-button {
   margin: 50px;
   line-height: 1.5;
   width: 30%;
-  font-family: 'Verdana', serif;
 }
 
 #email-style {
@@ -461,15 +468,13 @@ input::-webkit-inner-spin-button {
   justify-content: flex-start;
 }
 
-label {
-  font-family: 'Times New Roman', serif;
+label { 
   font-size: 20px;
 }
 
 .input {
   width: 350px;
   margin-bottom: 10px;
-  font-family: 'Verdana', serif;
   border: 2px solid #23a6f0;
 }
 
@@ -497,7 +502,6 @@ textarea {
   height: 300px;
   margin-bottom: 10px;
   resize: none;
-  font-family: 'Verdana', serif;
   border: 2px solid #23a6f0;
 }
 
