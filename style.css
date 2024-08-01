@@ -382,7 +382,8 @@ input::-webkit-inner-spin-button {
   display: flex;
   flex-direction: column;
   align-items: left;
-  padding: 200px 100px;
+  padding: 0px 100px;
+  padding-top: 200px; 
 }
 
 .about-container{
@@ -431,13 +432,14 @@ input::-webkit-inner-spin-button {
   display: flex;
   justify-content: center;
   padding: 200px 100px;
+  padding-bottom: 300px;
 }
 
 #contact-style {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  width: 400px;
+  width: 300px;
   padding: 50px 0px;
   resize: none;
 }
