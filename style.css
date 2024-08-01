@@ -403,6 +403,7 @@ input::-webkit-inner-spin-button {
 }
 .container {
   max-width: 500px;
+  color: black;
   background: #fff;
   padding: 20px;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
@@ -527,4 +528,24 @@ textarea {
 .active {
   transform: translateY(0px);
   opacity: 1;
+}
+
+footer {
+  background-color: #f8f8f8;
+  padding: 20px;
+  text-align: center;
+  border-top: 1px solid #e7e7e7;
+  margin-top: auto;
+}
+
+footer p {
+  margin: 0;
+  color: #555;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+footer a {
+  color: #0073aa;
+  text-decoration: none;
 }
