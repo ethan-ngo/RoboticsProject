@@ -431,8 +431,7 @@ input::-webkit-inner-spin-button {
 #contact {
   display: flex;
   justify-content: center;
-  padding: 300px 100px;
-  padding-top: 400px;
+  padding: 200px 100px;
 }
 
 #contact-style {
